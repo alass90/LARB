@@ -5,7 +5,7 @@ from typing import List, Dict, Any
 from openai import OpenAI
 
 # API Configuration
-API_KEY = "sk-SRi5iUfsYL95k13iIKjMxKR126y8d2UWm2B0jDYtsoyql375"
+API_KEY = os.getenv("MOONSHOT_API_KEY", "YOUR_API_KEY_HERE")
 BASE_URL = "https://api.moonshot.ai/v1"
 MODEL_NAME = "kimi-k2.5"
 
